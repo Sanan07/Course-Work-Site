@@ -5,7 +5,7 @@ Site for my Course Work
 <p>
 This is my course work site project
 </p>
-<h2>using technologies</h2>
+<h2>Using technologies</h2>
 <p>HTML CSS JavaScript</p>
 
 
