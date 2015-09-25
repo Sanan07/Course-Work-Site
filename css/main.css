@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+#wrapper {
+    background: url(../images/cover.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    min-height: 810px;
+    max-height: 850px;
+}
+
+#nav {
+    width: 100%;
+    position: relative;
+    height: 74px;
+    right: 0px;
+}
+
+#nav #menu {
+    list-style: none;
+    position: absolute;
+    right: 4%;
+    height: 100%;
+}
+
+#nav #menu li {
+    display: inline-block;
+    padding: 30px;
+    font-family: 'Lato';
+}
+
+#nav #menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    transition: 0.1s all;
+}
+
+#nav #menu li:hover a {
+    padding-bottom: 7px;
+    border-bottom: 4px solid white;
+}
+
+#quotes {
+    font-family: 'Lato';
+    position: absolute;
+    top: 45%;
+    right: 7%;
+    max-width: 470px;
+    color: white;
+}
+
+#quotes #text {
+    font-size: 25px;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+#quotes #author {
+    font-size: 25px;
+    position: relative;
+    left: 70%;
+    line-height: 3;
+}
+
+#main {
+    min-height: 850px;
+    max-height: 870px;
+    
+}
+
+#main #title {
+    font-size: 40px;
+    position: relative;
+    left: 40%;
+    padding-top: 2%;
+    min-width: 320px;
+    max-width: 350px;
+}
+
+#planes {
+    position: relative;
+    max-width: 850px;
+    display: table;
+}
+
+#row {
+    display: table-row;
+}
+
+#planes #airbus {
+    display: table-cell;
+    padding-right: 300px;
+    padding-top: 50px;
+    padding-left: 300px;
+    width: 260px;
+    text-align: center;
+}
+
+#planes .img {
+    border-radius: 50%;
+    position: relative;
+    left: 8%;
+}
+
+h1 {
+    position: relative;
+    left: 25%;
+    line-height: 2.9;
+    font-size: 32px;
+    width: 150px;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    left: 8%;
+}
+
+#bh1 {
+    left: 26%;
+}
+
+#planes #boeing {
+    display: table-cell;
+    width: 260px;
+    text-align: center;
+    padding-left: 80px;
+}
+
+#planes #boeing #img {
+    border-radius: 50%;
+    position: relative;
+    left: 8%;
+}
