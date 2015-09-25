@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "ProximaNovaRegular";
+    src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot");
+    src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"),
+    url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -6,6 +16,7 @@
 
 div {
     display: block;
+    font-family: 'ProximaNovaRegular';
 }
 
 #wrapper {
@@ -35,7 +46,7 @@ div {
 #nav #menu li {
     display: inline-block;
     padding: 30px;
-    font-family: 'Lato';
+    font-family:'ProximaNovaRegular','Lato';
 }
 
 #nav #menu li a {
@@ -78,13 +89,13 @@ div {
     
 }
 
-#main #title {
+#title {
     font-size: 40px;
     position: relative;
     left: 40%;
-    padding-top: 2%;
-    min-width: 320px;
-    max-width: 350px;
+    padding-top: 5%;
+    min-width: 300px;
+    max-width: 300px;
 }
 
 #planes {
