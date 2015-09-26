@@ -29,6 +29,7 @@ div {
     width: 100%;
     min-height: 810px;
     max-height: 850px;
+
 }
 
 #nav {
@@ -88,7 +89,7 @@ div {
 #main {
     min-height: 850px;
     max-height: 870px;
-    
+
 }
 
 #title {
@@ -96,7 +97,7 @@ div {
     position: relative;
     left: 40%;
     padding-top: 5%;
-    min-width: 300px;
+    min-width: 250px;
     max-width: 300px;
 }
 
