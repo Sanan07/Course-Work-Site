@@ -8,6 +8,16 @@
     font-style: normal;
     font-weight: normal;
 }
+/* font-family: "MarckScriptRegular"; */
+@font-face {
+    font-family: "MarckScriptRegular";
+    src: url("../fonts/MarckScriptRegular/MarckScriptRegular.eot");
+    src: url("../fonts/MarckScriptRegular/MarckScriptRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MarckScriptRegular/MarckScriptRegular.woff") format("woff"),
+    url("../fonts/MarckScriptRegular/MarckScriptRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 * {
     padding: 0;
     margin: 0;
@@ -15,12 +25,11 @@
 }
 
 div {
-    display: block;
-    font-family:'ProximaNovaRegular';
+     font-family:'ProximaNovaRegular';
 }
 
 #wrapper {
-    background: url(../images/cover.jpg) no-repeat center;
+    background: url(../images/cover2.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
@@ -32,26 +41,28 @@ div {
     width: 100%;
     position: relative;
     height: 74px;
-    right: 0;
+    top: 5px;
+
 }
 
 #nav #menu {
     list-style: none;
     position: absolute;
-    right: 4%;
+    left: 4%;
     height: 100%;
 }
 
 #nav #menu li {
     display: inline-block;
     padding: 30px;
+    text-shadow: 0 0 5px rgba(0,0,0,1);
 
 }
 
 #nav #menu li a {
     text-decoration: none;
     color: white;
-    font-size: 1.3em;
+    font-size: 1.4em;
     transition: 0.1s all;
 }
 
@@ -66,6 +77,8 @@ div {
     right: 7%;
     max-width: 475px;
     color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+
 }
 
 #quotes #text {
@@ -82,15 +95,15 @@ div {
 }
 
 #main {
-    min-height: 850px;
+    min-height: 870px;
     max-height: 870px;
 }
 
 #title {
     font-size: 40px;
     position: relative;
-    left: 40%;
-    padding-top: 6%;
+    left: 43%;
+    padding-top: 5%;
     min-width: 350px;
     max-width: 400px;
 }
@@ -103,18 +116,34 @@ div {
     
 }
 
-
 #planes #airbus {
     display: table-cell;
     position: relative;
     width: 260px;
-    left: 55%;
+    left: 65%;
     text-align: center;
 }
 
 #planes .img {
     border-radius: 50%;
     position: relative;
+    left: 8%;
+}
+
+#bh1 {
+    left: 30%;
+}
+
+#planes #boeing {
+    display: table-cell;
+    width: 260px;
+    text-align: center;
+    position: relative;
+    left: 130%;
+}
+
+#planes #boeing #img {
+    border-radius: 50%;
     left: 8%;
 }
 
@@ -134,27 +163,33 @@ p {
     left: 8%;
 }
 
-#bh1 {
-    left: 30%;
+#info {
+    height: 600px;
+    background-color: aqua;
+    background: url("../images/wing.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 
-#planes #boeing {
-      display: table-cell;
-    width: 260px;
-    text-align: center;
+#info #take {
+    display: block;
+    min-width: 100px;
+    max-width: 450px;
     position: relative;
-    left: 120%;
+    top: 50%;
+    left: 5%;
+    font-family: MarckScriptRegular;
+    text-shadow: 0 0 5px rgba(0,0,0,2);
+    font-size: 45px;
+    color: white;
+
 }
 
-#planes #boeing #img {
-    border-radius: 50%;
-    position: relative;
-    left: 8%;
-}
 
 #footer {
     height: 250px;
-    background-color: #444;
+    background-color: #333;
     width: 100%;
 
 }
@@ -174,11 +209,10 @@ p {
    margin-left: 5px;
 }
 
-
-#info {
-    height: 200px;
-    background-color: aqua;
+a {
+    text-decoration: none;
 }
+
 
 #socials {
     position: relative;
