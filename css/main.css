@@ -90,7 +90,7 @@ div {
 #quotes #author {
     font-size: 25px;
     position: relative;
-    left: 70%;
+    left: 72%;
     line-height: 3;
 }
 
@@ -198,7 +198,7 @@ p {
     max-width: 550px;
     min-width: 100px;
     position: relative;
-    left: 30%;
+    left: 33%;
     top: 30%;
 }
 
@@ -218,21 +218,27 @@ a {
     position: relative;
     max-width: 450px;
     top: 40%;
-    left: 33%;
+    left: 36%;
 
 }
 #socials p {
     max-width: 400px;
 }
 
+#socials p #linkedin {
+    margin: 0px 14px;
 
+}
+#socials p a img{
+    opacity: 0.6;
 
-#socials p #skype {
-    margin: 0px 5px;
 }
 
-#socials p a:hover{
-    opacity: 0.4;
+#socials p a:hover img {
+
+    opacity: 1;
+    transition: 0.3s all;
+
 }
 
 
