@@ -1,24 +1,14 @@
-/*Шрифт 'Proxima Nova'*/
-@font-face {
-    font-family: "ProximaNovaRegular";
-    src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot");
-    src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"),
-    url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
-
+body {
+    font-family: 'Lato';
+}
 div {
     display: block;
-    font-family: 'ProximaNovaRegular';
+    font-family:'Lato';
 }
 
 #wrapper {
@@ -29,7 +19,6 @@ div {
     width: 100%;
     min-height: 810px;
     max-height: 850px;
-
 }
 
 #nav {
@@ -49,7 +38,7 @@ div {
 #nav #menu li {
     display: inline-block;
     padding: 30px;
-    font-family:'ProximaNovaRegular','Lato';
+
 }
 
 #nav #menu li a {
@@ -89,34 +78,31 @@ div {
 #main {
     min-height: 850px;
     max-height: 870px;
-
 }
 
 #title {
     font-size: 40px;
     position: relative;
     left: 40%;
-    padding-top: 5%;
-    min-width: 250px;
-    max-width: 300px;
+    padding-top: 6%;
+    min-width: 350px;
+    max-width: 400px;
 }
 
 #planes {
     position: relative;
     max-width: 850px;
+    min-width: 500px;
     display: table;
+    
 }
 
-#row {
-    display: table-row;
-}
 
 #planes #airbus {
     display: table-cell;
-    padding-right: 300px;
-    padding-top: 50px;
-    padding-left: 300px;
+    position: relative;
     width: 260px;
+    left: 55%;
     text-align: center;
 }
 
@@ -128,7 +114,7 @@ div {
 
 h1 {
     position: relative;
-    left: 25%;
+    left: 30%;
     line-height: 2.9;
     font-size: 32px;
     width: 150px;
@@ -143,18 +129,53 @@ p {
 }
 
 #bh1 {
-    left: 26%;
+    left: 30%;
 }
 
 #planes #boeing {
-    display: table-cell;
+      display: table-cell;
     width: 260px;
     text-align: center;
-    padding-left: 80px;
+    position: relative;
+    left: 120%;
 }
 
 #planes #boeing #img {
     border-radius: 50%;
     position: relative;
     left: 8%;
+}
+
+#footer {
+    height: 150px;
+    background-color: #333;
+    width: 100%;
+}
+
+#footer #copy {
+    max-width: 550px;
+    min-width: 100px;
+    position: relative;
+    left: 30%;
+    top: 40%;
+}
+
+#footer #copy #maker {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    left: 1%;
+    position: relative;
+}
+
+#footer #copy #maker:hover {
+     padding-bottom: 5px;
+     border-bottom: 3px solid white;   
+    
+
+}
+
+#info {
+     height: 200px;
+    background-color: aqua;
 }
