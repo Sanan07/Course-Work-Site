@@ -165,7 +165,6 @@ p {
 
 #info {
     height: 600px;
-    background-color: aqua;
     background: url("../images/wing.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
@@ -225,20 +224,24 @@ a {
     max-width: 400px;
 }
 
-#socials p #linkedin {
-    margin: 0px 14px;
+#socials p img {
+    padding: 5px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+}
 
+
+#socials p #linkedin {
+    margin: 0px 10px;
 }
 #socials p a img{
-    opacity: 0.6;
-
+    opacity: 0.5;
 }
 
 #socials p a:hover img {
-
     opacity: 1;
     transition: 0.3s all;
-
 }
 
 
