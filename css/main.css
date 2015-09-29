@@ -225,9 +225,9 @@ a {
 }
 
 #socials p img {
-    padding: 5px;
+    padding: 10px;
     background-color: white;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 50%;
 }
 
