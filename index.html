@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Good To See You</title>
     <link rel="icon" href="logo/favicon.png">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/common.css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 
     <div id="wrapper">
-        <div id="overlay">
-
-
-        </div>
+        <div id="overlay"></div>
         <video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto" muted="muted">
             <source src="video/promo.mp4">
         </video>
 
-         <div id="header">
+        <div id="header">
             <div id="nav">
                 <ul id="menu">
                     <li><a href="#">Home</a></li>
@@ -31,34 +30,47 @@
         </div>
     </div>
 
-
     <div id="main">
-       <h1 id="title">Our airplanes</h1>
+        <h1 id="title">Our airplanes</h1>
         <div id="planes">
-            <div id="row">
-                <div id="airbus">
-                    <img class="img" src="images/airbus.jpg" height="220" width="220" alt="airbus logo">
-                        <h1>Airbus</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti iusto quae,
-                        aspernatur, velit expedita lorem
-                    </p>
+            <div class="row">
+                <div class="cell">
+                   <img src="images/A320.jpg" alt="A320"/>
+                        <div class="front">
+                            <p>Airbus A320</p>
+                            <a href="html/airplanes.html" class="learn">Learn more</a>
+                    </div>
                 </div>
-                <div id="boeing">
-                    <img class="img" src="images/boeing.jpg" height="220" width="220" alt="boeing logo">
-                        <h1 id="bh1">Boeing</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti iusto quae,
-                        aspernatur, velit expedita lorem
-                    </p>
+                <div class="cell">
+                    <img src="images/A319.jpg" alt="A319"/>
+                         <div class="front">
+                            <p>Airbus A319</p>
+                            <a href="html/airplanes.html" class="learn">Learn more</a>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <img src="images/B787.jpg" alt="B787"/>
+                        <div class="front">
+                            <p>Boeing 787</p>
+                            <a href="html/airplanes.html" class="learn">Learn more</a>
+                        </div>
+                </div>
+                <div class="cell">
+                    <img src="images/B767.jpg" alt="B767"/>
+                        <div class="front">
+                            <p>Boeing 767</p>
+                            <a href="html/airplanes.html" class="learn">Learn more</a>
+                        </div>
                 </div>
             </div>
         </div>
     </div>
 
-
-     <div id="info">
+    <div id="info">
         <a href="html/airplanes.html" id="take">Take Me Away</a>
     </div>
-
 
     <div id="footer">
         <p id="copy">Sanan Designed Studio. Copyright &copy 2015. All rights reserved. Designed by
@@ -67,18 +79,17 @@
         <div id="socials">
             <p>
                 <a href="https://www.facebook.com/sanan.yuzb95" target="_blank">
-                    <img src="images/Social/Facebook.png" alt="facebook" id="facebook"/>
+                    <img src="images/Social/Facebook.png" alt="facebook" id="facebook" />
                 </a>
                 <a href="https://www.linkedin.com/profile/view?id=AAIAABV97NcBmPm7e_txzPsZoY8W7u2oxCunVwA&trk=nav_responsive_tab_profile_pic" target="_blank">
-                    <img src="images/Social/Linkedin.png" alt="Linkdein" id="linkedin"/>
+                    <img src="images/Social/Linkedin.png" alt="Linkdein" id="linkedin" />
                 </a>
                 <a href="">
-                    <img src="images/Social/Skype.png" alt="Sype" id="skype" title="Skype username: sanan.yuzb"/>
+                    <img src="images/Social/Skype.png" alt="Sype" id="skype" title="Skype username: sanan.yuzb" />
                 </a>
             </p>
         </div>
     </div>
 
 </body>
-
 </html>

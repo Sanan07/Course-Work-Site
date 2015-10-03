@@ -1,23 +1,24 @@
 /* font-family: "ProximaNovaRegular"; */
+
 @font-face {
     font-family: "ProximaNovaRegular";
     src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot");
-    src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"),
-    url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
+    src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"), url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
+
+
 /* font-family: "MarckScriptRegular"; */
+
 @font-face {
     font-family: "MarckScriptRegular";
     src: url("../fonts/MarckScriptRegular/MarckScriptRegular.eot");
-    src: url("../fonts/MarckScriptRegular/MarckScriptRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/MarckScriptRegular/MarckScriptRegular.woff") format("woff"),
-    url("../fonts/MarckScriptRegular/MarckScriptRegular.ttf") format("truetype");
+    src: url("../fonts/MarckScriptRegular/MarckScriptRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/MarckScriptRegular/MarckScriptRegular.woff") format("woff"), url("../fonts/MarckScriptRegular/MarckScriptRegular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
+
 * {
     padding: 0;
     margin: 0;
@@ -25,7 +26,7 @@
 }
 
 div {
-     font-family:'ProximaNovaRegular';
+    font-family: 'ProximaNovaRegular';
 }
 
 #wrapper {
@@ -39,30 +40,34 @@ div {
     height: 810px;
     width: 100%;
 }
-
-#wrapper > video {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-
-}
-
-@media (min-aspect-ratio: 16/9) {
-    #wrapper > video { height: 300%; top: -100%; }
-}
-@media (max-aspect-ratio: 16/9) {
-    #wrapper > video { width: 300%; left: -100%; }
-}
-
 #overlay {
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.2;
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
     z-index: 1;
+}
+
+#wrapper > video {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #wrapper > video {
+        height: 300%;
+        top: -100%;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #wrapper > video {
+        width: 300%;
+        left: -100%;
+    }
 }
 
 #nav {
@@ -71,7 +76,6 @@ div {
     height: 74px;
     top: 5px;
     z-index: 2;
-
 }
 
 #nav #menu {
@@ -84,15 +88,14 @@ div {
 #nav #menu li {
     display: inline-block;
     padding: 30px;
-    text-shadow: 0 0 5px rgba(0,0,0,1);
-
+    text-shadow: 0 0 5px rgba(0, 0, 0, 1);
 }
 
 #nav #menu li a {
     text-decoration: none;
     color: snow;
     font-size: 1.4em;
-    transition: 0.1s all;
+    transition: all 0.1s ease 0s;
 }
 
 #nav #menu li:hover a {
@@ -100,68 +103,107 @@ div {
     border-bottom: 4px solid white;
 }
 
+
 #quotes {
     position: absolute;
     top: 45%;
     right: 7%;
     max-width: 475px;
     color: white;
-    text-shadow: 0 0 10px rgba(0,0,0,0.5);
-
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #main {
-    min-height: 870px;
-    max-height: 870px;
+    min-height: 970px;
+    max-height: 1070px;
+
 }
 
 #title {
-    font-size: 40px;
+    font-size: 45px;
     position: relative;
-    left: 43%;
-    padding-top: 5%;
+    left: 41%;
+    padding-top: 1.8%;
     min-width: 350px;
     max-width: 400px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 #planes {
-    position: relative;
-    max-width: 850px;
-    min-width: 500px;
     display: table;
-    
+    margin-left: 250px;
+    height: 700px;
+    border-spacing: 10px;
+    text-align: justify;
 }
 
-#planes #airbus {
+.row {
+    display: table-row;
+}
+#planes .row .cell {
+    position: relative;
     display: table-cell;
-    position: relative;
-    width: 260px;
-    left: 65%;
+    vertical-align: top;
+}
+
+#planes .row .cell .front {
+    background-color: rgba(255,255,255,0.7);
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 296px;
+    opacity: 0;
     text-align: center;
-}
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 
-#planes .img {
-    border-radius: 50%;
+}
+#planes .row .cell .front p {
+    font-size: 1.65em;
+    margin: 0px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1em;
+    color: black;
     position: relative;
-    left: 8%;
+    left: 0%;
+
+}
+#planes .row .cell .front .learn {
+    position: absolute;
+    font-size: 1.65em;
+    margin: 0px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1em;
+    color: black;
+    border: 2px solid black;
+    padding: 15px;
+    left: 32%;
+    bottom: 0%;
+
+}
+#planes .row .cell .front:hover {
+    opacity: 1;
+
+}
+#planes .row .cell .front:hover p {
+    font-size: 50px;
+    transform: translate(0px, 90px);
+    transition: all 1s ease 0s;
 }
 
-#bh1 {
-    left: 30%;
+#planes .row .cell .front:hover .learn {
+    transform: translate(0px, -70px);
+    transition: all 1s ease 0s;
 }
 
-#planes #boeing {
-    display: table-cell;
-    width: 260px;
-    text-align: center;
-    position: relative;
-    left: 130%;
+#planes .row .cell .front .learn:hover {
+    color: tomato;
 }
 
-#planes #boeing #img {
-    border-radius: 50%;
-    left: 8%;
-}
+
+
 
 h1 {
     position: relative;
@@ -184,7 +226,6 @@ p {
     background: url("../images/wing.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-
 }
 
 #info #take {
@@ -194,20 +235,17 @@ p {
     position: relative;
     top: 50%;
     left: 5%;
-    font-family: MarckScriptRegular;
-    text-shadow: 0 0 5px rgba(0,0,0,2);
+    font-family: 'MarckScriptRegular';
+    text-shadow: 0 0 5px rgba(0, 0, 0, 2);
     font-size: 45px;
     color: snow;
-
 }
-
 
 #footer {
     height: 250px;
     background-color: #333;
     width: 100%;
     color: snow;
-
 }
 
 #footer #copy {
@@ -222,21 +260,20 @@ p {
     text-decoration: none;
     color: steelblue;
     font-size: 22px;
-   margin-left: 5px;
+    margin-left: 5px;
 }
 
 a {
     text-decoration: none;
 }
 
-
 #socials {
     position: relative;
     max-width: 450px;
     top: 40%;
     left: 36%;
-
 }
+
 #socials p {
     max-width: 400px;
 }
@@ -248,11 +285,11 @@ a {
     border-radius: 50%;
 }
 
-
 #socials p #linkedin {
     margin: 0px 10px;
 }
-#socials p a img{
+
+#socials p a img {
     opacity: 0.5;
 }
 
@@ -260,6 +297,3 @@ a {
     opacity: 1;
     transition: 0.3s all;
 }
-
-
-
