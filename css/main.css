@@ -38,7 +38,7 @@
 div {
     font-family: 'ProximaNovaRegular';
 }
-
+/*Верхний блок*/
 #wrapper {
     position: relative;
     top: 0;
@@ -50,6 +50,7 @@ div {
     height: 810px;
     width: 100%;
 }
+/*Затемнитель для верхнего блока*/
 #overlay {
     background-color: black;
     opacity: 0.2;
@@ -59,7 +60,7 @@ div {
     height: 100%;
     z-index: 1;
 }
-
+/*Видео ролик*/
 #wrapper > video {
     position: absolute;
     top: 0;
@@ -79,7 +80,7 @@ div {
         left: -100%;
     }
 }
-
+/*Верхний блок*/
 #nav {
     width: 100%;
     position: relative;
@@ -87,47 +88,38 @@ div {
     top: 5px;
     z-index: 2;
 }
-
+/*Меню в верхнем блоке*/
 #nav #menu {
     list-style: none;
     position: absolute;
     right: 4%;
     height: 100%;
 }
-
+/*Элементы меню*/
 #nav #menu li {
     display: inline-block;
     padding: 30px;
     text-shadow: 0 0 5px rgba(0, 0, 0, 1);
 }
-
+/*Ссылки в элементах меню*/
 #nav #menu li a {
     text-decoration: none;
     color: snow;
     font-size: 1.5em;
     transition: all 0.1s ease 0s;
 }
-
+/*Наведение на элементы меню*/
 #nav #menu li:hover a {
     padding-bottom: 7px;
     border-bottom: 4px solid white;
 }
-
-#quotes {
-    position: absolute;
-    top: 45%;
-    right: 7%;
-    max-width: 475px;
-    color: white;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
+/*Главный блок*/
 #main {
-    min-height: 1200px;
+    min-height: 1240px;
     max-height: 1370px;
 
 }
-
+/*Заголовок в главном блоке*/
 #title {
     font-size: 45px;
     position: relative;
@@ -138,7 +130,7 @@ div {
     text-transform: uppercase;
     text-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
-
+/*Список самолетов*/
 #planes {
     display: table;
     margin-left: 250px;
@@ -147,21 +139,21 @@ div {
     text-align: justify;
 
 }
-
+/*Ряд списка самолетов*/
 .row {
     display: table-row;
-
 }
+/*Самолеты в списке*/
 #planes .row .cell {
     position: relative;
     display: table-cell;
     vertical-align: top;
 
 }
-
+/*Передний невидимы блок на картинке самолета*/
 #planes .row .cell .front {
-    background-color: rgba(255,255,255,0.8);
     position: absolute;
+    background-color: rgba(255,255,255,0.8);
     top: 0;
     width: 100%;
     height: 296px;
@@ -170,7 +162,10 @@ div {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 
 }
+/*Текст на невидимом блоке*/
 #planes .row .cell .front p {
+    position: relative;
+    left: 0;
     font-size: 1.65em;
     color: black;
     font-family: ArianAMUMonoRegular;
@@ -179,10 +174,8 @@ div {
     font-weight: 700;
     line-height: 1em;
 
-    position: relative;
-    left: 0;
-
 }
+/*Ссылка на не видимом блоке*/
 #planes .row .cell .front .learn {
     position: absolute;
     font-size: 1.65em;
@@ -195,23 +188,22 @@ div {
     padding: 15px;
     left: 32%;
     bottom: 0;
-
 }
+
+/*Наведение на невидимый блок*/
 #planes .row .cell .front:hover {
     opacity: 1;
-
 }
 #planes .row .cell .front:hover p {
     font-size: 50px;
     transform: translate(0px, 90px);
     transition: all 1s ease 0s;
 }
-
 #planes .row .cell .front:hover .learn {
     transform: translate(0px, -70px);
     transition: all 1s ease 0s;
 }
-
+/*Наведение на ссылку на невидимом блоке*/
 #planes .row .cell .front .learn:hover {
     color: indianred;
 }
@@ -231,14 +223,14 @@ p {
     position: relative;
     left: 8%;
 }
-
+/*Третий блок*/
 #info {
     height: 600px;
     background: url("../images/wing.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
 }
-
+/*Запись в третьем блоке*/
 #info #take {
     display: block;
     min-width: 100px;
@@ -251,7 +243,7 @@ p {
     font-size: 45px;
     color: snow;
 }
-
+/*Самый нижний блок*/
 #footer {
     height: 250px;
     background-color: #212121;
@@ -268,17 +260,12 @@ p {
     color: snow;
 }
 
-#footer #copy span {
-    text-decoration: none;
-    color: #01579B;
-    font-size: 23px;
-    margin-left: 5px;
-}
-
+/*Sanan Yuzb*/
 a {
     text-decoration: none;
+    color: deepskyblue;
 }
-
+/*Иконки соц сетей*/
 #socials {
     position: relative;
     max-width: 450px;
@@ -289,7 +276,7 @@ a {
 #socials p {
     max-width: 400px;
 }
-
+/*Из-ия соц сетей*/
 #socials p img {
     padding: 10px;
     background-color: white;
@@ -303,6 +290,7 @@ a {
 
 #socials p a img {
     opacity: 0.5;
+
 }
 
 #socials p a:hover img {
