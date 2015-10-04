@@ -172,12 +172,13 @@ div {
 }
 #planes .row .cell .front p {
     font-size: 1.65em;
+    color: black;
     font-family: ArianAMUMonoRegular;
     margin: 0;
     text-transform: uppercase;
     font-weight: 700;
     line-height: 1em;
-    color: black;
+
     position: relative;
     left: 0;
 
@@ -212,7 +213,7 @@ div {
 }
 
 #planes .row .cell .front .learn:hover {
-    color: tomato;
+    color: indianred;
 }
 
 h1 {
@@ -253,7 +254,7 @@ p {
 
 #footer {
     height: 250px;
-    background-color: #333;
+    background-color: #212121;
     width: 100%;
     color: snow;
 }
@@ -264,12 +265,13 @@ p {
     position: relative;
     left: 33%;
     top: 30%;
+    color: snow;
 }
 
 #footer #copy span {
     text-decoration: none;
-    color: steelblue;
-    font-size: 22px;
+    color: #01579B;
+    font-size: 23px;
     margin-left: 5px;
 }
 
