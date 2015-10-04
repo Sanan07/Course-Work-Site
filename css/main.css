@@ -1,20 +1,30 @@
 /* font-family: "ProximaNovaRegular"; */
-
 @font-face {
     font-family: "ProximaNovaRegular";
-    src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot");
-    src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"), url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
+    src: url("../fonts/ProximaNova/ProximaNovaRegular/ProximaNovaRegular.eot");
+    src: url("../fonts/ProximaNova/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/ProximaNova/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"),
+    url("../fonts/ProximaNova/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
-
-
 /* font-family: "MarckScriptRegular"; */
-
 @font-face {
     font-family: "MarckScriptRegular";
     src: url("../fonts/MarckScriptRegular/MarckScriptRegular.eot");
-    src: url("../fonts/MarckScriptRegular/MarckScriptRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/MarckScriptRegular/MarckScriptRegular.woff") format("woff"), url("../fonts/MarckScriptRegular/MarckScriptRegular.ttf") format("truetype");
+    src: url("../fonts/MarckScriptRegular/MarckScriptRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MarckScriptRegular/MarckScriptRegular.woff") format("woff"),
+    url("../fonts/MarckScriptRegular/MarckScriptRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "ArianAMUMonoRegular"; */
+@font-face {
+    font-family: "ArianAMUMonoRegular";
+    src: url("../fonts/ArianAMUMono/ArianAMUMonoRegular/ArianAMUMonoRegular.eot");
+    src: url("../fonts/ArianAMUMono/ArianAMUMonoRegular/ArianAMUMonoRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ArianAMUMono/ArianAMUMonoRegular/ArianAMUMonoRegular.woff") format("woff"),
+    url("../fonts/ArianAMUMono/ArianAMUMonoRegular/ArianAMUMonoRegular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -103,7 +113,6 @@ div {
     border-bottom: 4px solid white;
 }
 
-
 #quotes {
     position: absolute;
     top: 45%;
@@ -114,8 +123,8 @@ div {
 }
 
 #main {
-    min-height: 970px;
-    max-height: 1070px;
+    min-height: 1200px;
+    max-height: 1370px;
 
 }
 
@@ -151,7 +160,7 @@ div {
 }
 
 #planes .row .cell .front {
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.8);
     position: absolute;
     top: 0;
     width: 100%;
@@ -163,6 +172,7 @@ div {
 }
 #planes .row .cell .front p {
     font-size: 1.65em;
+    font-family: ArianAMUMonoRegular;
     margin: 0;
     text-transform: uppercase;
     font-weight: 700;
@@ -286,7 +296,7 @@ a {
 }
 
 #socials p #linkedin {
-    margin: 0px 10px;
+    margin: 0 10px;
 }
 
 #socials p a img {
