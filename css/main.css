@@ -133,7 +133,7 @@ div {
 /*Список самолетов*/
 #planes {
     display: table;
-    margin-left: 250px;
+    margin-left: 220px;
     height: 700px;
     border-spacing: 20px;
     text-align: justify;
