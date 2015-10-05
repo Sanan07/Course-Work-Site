@@ -113,6 +113,37 @@ div {
     padding-bottom: 7px;
     border-bottom: 4px solid white;
 }
+
+#wrapper #arrow {
+    position: absolute;
+    bottom: 8%;
+    z-index: 1;
+    left: 50%;
+    -webkit-animation: mymove 3s infinite; /* Chrome, Safari, Opera */
+    animation-name: mymove;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+@-webkit-keyframes mymove {
+    0%      {bottom: 8%;}
+    50%     {bottom:6%}
+    100%    {top: 2%}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%      {bottom: 8%;}
+    50%     {bottom: 6%}
+    100%    {top: 2%}
+}
+
+@keyframes scrool {
+
+}
+
 /*Главный блок*/
 #main {
     min-height: 1240px;
