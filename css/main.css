@@ -47,8 +47,9 @@ div {
     left: 0;
     overflow: hidden;
     opacity: 1;
-    height: 810px;
+    height: 750px;
     width: 100%;
+    margin: 0 auto;
 }
 /*Затемнитель для верхнего блока*/
 #overlay {
@@ -58,6 +59,7 @@ div {
     top: 0;
     width: 100%;
     height: 100%;
+    margin: 0 auto;
     z-index: 1;
 }
 /*Видео ролик*/
@@ -87,6 +89,7 @@ div {
     height: 74px;
     top: 5px;
     z-index: 2;
+
 }
 /*Меню в верхнем блоке*/
 #nav #menu {
@@ -105,7 +108,7 @@ div {
 #nav #menu li a {
     text-decoration: none;
     color: snow;
-    font-size: 1.5em;
+    font-size: 1.3em;
     transition: all 0.1s ease 0s;
 }
 /*Наведение на элементы меню*/
@@ -118,29 +121,36 @@ div {
     position: absolute;
     bottom: 8%;
     z-index: 1;
-    left: 50%;
-    -webkit-animation: mymove 3s infinite; /* Chrome, Safari, Opera */
+    left: 48%;
+    -webkit-animation: mymove 1.5s infinite; /* Chrome, Safari, Opera */
     animation-name: mymove;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-delay: 0.5s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: ease;
 
 }
+
+#wrapper #arrow img {
+    width: 70px;
+    height: 25px;
+}
+
 @-webkit-keyframes mymove {
-    0%      {bottom: 8%;}
-    50%     {bottom:6%}
-    100%    {top: 2%}
+    0%      {bottom: 10%;}
+    50%     {bottom: 8%;}
+    100%     {bottom: 10%;}
+
+
 }
 
 /* Standard syntax */
 @keyframes mymove {
-    0%      {bottom: 8%;}
-    50%     {bottom: 6%}
-    100%    {top: 2%}
-}
+    0%      {bottom: 10%;}
+    50%     {bottom: 8%;}
+    100%     {bottom: 10%;}
 
-@keyframes scrool {
+
 
 }
 
@@ -148,6 +158,7 @@ div {
 #main {
     min-height: 1240px;
     max-height: 1370px;
+    margin: 0 auto;
 
 }
 /*Заголовок в главном блоке*/
@@ -164,15 +175,15 @@ div {
 /*Список самолетов*/
 #planes {
     display: table;
-    margin-left: 220px;
+    margin: 0 auto;
     height: 700px;
     border-spacing: 20px;
-    text-align: justify;
 
 }
 /*Ряд списка самолетов*/
 .row {
     display: table-row;
+    max-width: 90%;
 }
 /*Самолеты в списке*/
 #planes .row .cell {
@@ -220,6 +231,8 @@ div {
     left: 32%;
     bottom: 0;
 }
+
+
 
 /*Наведение на невидимый блок*/
 #planes .row .cell .front:hover {
