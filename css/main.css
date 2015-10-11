@@ -37,6 +37,7 @@
 
 div {
     font-family: 'ProximaNovaRegular';
+
 }
 /*Верхний блок*/
 #wrapper {
@@ -47,7 +48,7 @@ div {
     left: 0;
     overflow: hidden;
     opacity: 1;
-    height: 750px;
+    height: 790px;
     width: 100%;
     margin: 0 auto;
 }
@@ -70,14 +71,14 @@ div {
 }
 
 @media (min-aspect-ratio: 16/9) {
-    #wrapper > video {
+    #wrapper > video,#overlay {
         height: 300%;
         top: -100%;
     }
 }
 
 @media (max-aspect-ratio: 16/9) {
-    #wrapper > video {
+    #wrapper > video,#overlay {
         width: 300%;
         left: -100%;
     }
@@ -119,10 +120,9 @@ div {
 
 #wrapper #arrow {
     position: absolute;
-    bottom: 8%;
     z-index: 1;
-    left: 48%;
-    -webkit-animation: mymove 1.5s infinite; /* Chrome, Safari, Opera */
+    bottom: 10%;
+    left: 50%;
     animation-name: mymove;
     animation-duration: 2s;
     animation-delay: 0.5s;
@@ -184,12 +184,14 @@ div {
 .row {
     display: table-row;
     max-width: 90%;
+
 }
 /*Самолеты в списке*/
 #planes .row .cell {
     position: relative;
     display: table-cell;
     vertical-align: top;
+
 
 }
 /*Передний невидимы блок на картинке самолета*/
@@ -231,6 +233,7 @@ div {
     left: 32%;
     bottom: 0;
 }
+
 
 
 
@@ -290,7 +293,7 @@ p {
 /*Самый нижний блок*/
 #footer {
     height: 250px;
-    background-color: #212121;
+    background-color: #5e5e5e;
     width: 100%;
     color: snow;
 }
