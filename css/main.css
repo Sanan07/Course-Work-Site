@@ -49,7 +49,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    height: 790px;
+    height: 800px;
     width: 100%;
     margin: 0 auto;
 }
@@ -156,7 +156,7 @@ a{
     min-height: 700px;
     max-height: 750px;
     margin: 0 auto;
-    border-spacing: 10px;
+   border-spacing: 10px;
     margin-top: 3%;
     margin-bottom: 50px;
 }
@@ -176,7 +176,6 @@ a{
     background-color: rgba(0,0,0,0.5);
 }
 
-
 /*Передний невидимы блок на картинке самолета*/
 #planes .row .cell .front {
     position: absolute;
@@ -184,7 +183,6 @@ a{
     width: 100%;
     height: 100%;
     opacity: 0;
-
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
