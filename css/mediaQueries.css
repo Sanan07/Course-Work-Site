@@ -8,8 +8,21 @@
 
 
 @media screen and (max-width: 1024px){
+
+    #logo {
+        top: 12%;
+    }
+
+
+    #logo img {
+        width: 100px;
+        height: 70px;
+
+    }
+
+
     #nav #menu li a {
-        font-size: 88%;
+        font-size: 80%;
     }
 
     #main #planes .row .cell img {

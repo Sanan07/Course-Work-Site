@@ -6,6 +6,7 @@
     <title>Good To See You</title>
     <link rel="icon" href="logo/favicon.png">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css"/>
     <link rel="stylesheet" href="css/mediaQueries.css"/>
     <script src="js/script.js" defer></script>
 </head>
@@ -13,19 +14,20 @@
 <body>
 
     <div id="wrapper">
-        <div id="overlay"></div>
-             <video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto" muted="muted">
-                <source src="video/promo2.mp4">
-            </video>
+        <div id="nav">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="logo/logo3.png" alt="logo" width="170" height="85"/>
+                </a>
 
-            <div id="nav">
+            </div>
                 <ul id="menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="html/airplanes.html">Airplanes</a></li>
                     <li><a href="#">About us</a></li>
                     <li><a href="#">Contacts</a></li>
                 </ul>
-            </div>
+        </div>
 
         <div id="arrow">
             <a href="index.html#main">
@@ -35,78 +37,83 @@
     </div>
 
     <div id="main">
-        <h1 id="title">Our airplanes</h1>
+       <h1 id="title">Our airplanes</h1>
         <div id="planes">
             <div class="row">
                 <div class="cell">
-                   <img src="images/A320.jpg" alt="A320"/>
+                   <img src="images/12.jpg" alt="A320"/>
                         <div class="front">
-                            <p>Airbus A320</p>
-                            <a href="html/airplanes.html" class="learn">Learn more</a>
-                    </div>
+                                <a href="html/airplanes.html" class="animated  bounce learn infinite ">
+                                    Learn more
+                                </a>
+                         </div>
                 </div>
                 <div class="cell">
-                    <img src="images/A319.jpg" alt="A319"/>
+                    <img src="images/british.jpg" alt="A319"/>
                          <div class="front">
-                            <p>Airbus A319</p>
-                            <a href="html/airplanes.html" class="learn">Learn more</a>
+                                <a href="html/airplanes.html" class="animated bounce learn infinite">
+                                    Learn more
+                                </a>
+                        </div>
+                </div>
+                <div class="cell">
+                   <img src="images/lo.jpg" alt="B787" id="right"/>
+                        <div class="front">
+                               <a href="html/airplanes.html" class="animated bounce learn infinite">
+                                   Learn more
+                               </a>
                         </div>
                 </div>
             </div>
             <div class="row">
                 <div class="cell">
-                    <img src="images/B787.jpg" alt="B787"/>
+                    <img src="images/plane-392006_1920.jpg" alt="B767"/>
                         <div class="front">
-                            <p>Boeing 787</p>
-                            <a href="html/airplanes.html" class="learn">Learn more</a>
+                                <a href="html/airplanes.html" class="animated  bounce learn infinite">
+                                    Learn more
+                                </a>
                         </div>
                 </div>
                 <div class="cell">
-                    <img src="images/B767.jpg" alt="B767"/>
-                        <div class="front">
-                            <p>Boeing 767</p>
-                            <a href="html/airplanes.html" class="learn">Learn more</a>
-                        </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="cell">
-                    <img src="images/B747.jpg" alt="B747"/>
-                        <div class="front">
-                            <p>Boeing 747</p>
-                            <a href="html/airplanes.html" class="learn">Learn more</a>
-                        </div>
-                </div>
-                <div class="cell">
-                    <img src="images/G650.jpg" alt="G650"/>
+                    <img src="images/up.jpg" alt="B747"/>
                     <div class="front">
-                        <p>Gulfstream G650</p>
-                        <a href="html/airplanes.html" class="learn">Learn more</a>
+                         <a href="html/airplanes.html" class="animated  bounce learn infinite">
+                             Learn more
+                         </a>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="images/model.jpg" alt="B747"/>
+                    <div class="front">
+                            <a href="html/airplanes.html" class="animated bounce learn infinite">
+                                Learn more
+                            </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
+    </div>
+    </div>
     <div id="info">
         <a href="html/airplanes.html" id="take">Take Me Away</a>
     </div>
 
     <div id="footer">
         <p id="copy">Sanan Designed Studio. Copyright &copy 2015. All rights reserved. Designed by
-            <a href="https://www.facebook.com/sanan.yuzb95" target="_blank">Sanan Yuzb</a>
+            <a href="https://www.facebook.com/sanan.yuzb95" target="_blank" id="maker">Sanan Yuzb</a>
         </p>
         <div id="socials">
             <p>
                 <a href="https://www.facebook.com/sanan.yuzb95" target="_blank">
-                    <img src="images/Social/Facebook.png" alt="facebook" id="facebook"/>
+                    <img src="images/Social/Facebook.png" alt="facebook" id="facebook" />
+                </a>
+                <a href="https://plus.google.com/105834318731440021284/posts" target="_blank">
+                    <img src="images/Social/Google.png" alt="Google Plus" id="google" />
                 </a>
                 <a href="https://www.linkedin.com/profile/view?id=AAIAABV97NcBmPm7e_txzPsZoY8W7u2oxCunVwA&trk=nav_responsive_tab_profile_pic" target="_blank">
                     <img src="images/Social/Linkedin.png" alt="Linkdein" id="linkedin" />
                 </a>
-                <a href="">
-                    <img src="images/Social/Skype.png" alt="Sype" id="skype" title="Skype username: sanan.yuzb" />
-                </a>
+
             </p>
         </div>
     </div>
