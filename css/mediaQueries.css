@@ -13,20 +13,23 @@
         top: 12%;
     }
 
-
     #logo img {
         width: 100px;
         height: 70px;
 
     }
 
-
     #nav #menu li a {
         font-size: 80%;
     }
 
+    #wrapper #title {
+        font-size: 35px;
+    }
+
+
     #main #planes .row .cell img {
-        min-width: 80%;
+        width: 80%;
         height: 50%;
     }
 
@@ -37,7 +40,18 @@
     #planes .row .cell .front {
         min-width: 400px;
         height: 100%;
+    }
+    #footer {
+        height: 200%;
+    }
 
+
+    #footer #copy {
+        width: 200px;
+    }
+
+    #footer #socials p{
+        width: 200px;
     }
 
 
