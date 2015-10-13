@@ -27,20 +27,20 @@
         font-size: 35px;
     }
 
-
-    #main #planes .row .cell img {
+    #main #planes .row .cell, img {
         width: 80%;
         height: 50%;
+    }
+
+    .learn {
+        width: 50%;
+
     }
 
     #planes {
         height: 450px;
     }
 
-    #planes .row .cell .front {
-        min-width: 400px;
-        height: 100%;
-    }
     #footer {
         height: 200%;
     }

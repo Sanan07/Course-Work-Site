@@ -217,15 +217,27 @@ a{
     border: 1px solid white;
     padding: 15px;
 }
+
+/*Надпись на невидимом фоне про название сам-та*/
+#planes .row .cell .front .plane_type {
+    position: absolute;
+    color: snow;
+    font-size: 22px;
+    bottom: 20px;
+   right: 10px;
+
+
+}
+
 /*Прикосновение к из-ию*/
 #planes .row .cell .front:hover .learn {
-    animation-name: pulse;
+    animation-name: tada;
     box-shadow: 0 0 10px rgba(0,0,0,1);
 }
 /*Прикосновение к ссылке*/
 #planes .row .cell .front .learn:hover {
     background-color: rgba(0,0,0,0.3);
-    color: firebrick;
+    color: #0ba8f8;
 }
 
 
