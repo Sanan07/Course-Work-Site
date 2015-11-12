@@ -1,58 +1,73 @@
-* {
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+/*Mobile first*/
+.container .cols.col-1, 
+.container .cols.col-2, 
+.container .cols.col-3,
+.container .cols.col-4, 
+.container .cols.col-5, 
+.container .cols.col-6, 
+.container .cols.col-7, 
+.container .cols.col-8, 
+.container .cols.col-9,
+.container .cols.col-10, 
+.container .cols.col-11,
+.container .cols.col-12 { width: 100%;}
+
+/*From 1024px to infinity*/
+
+@media screen and (min-width: 1024px) {
+
+.container .cols.col-1 { width: 8.333333333%; }
+.container .cols.col-2 { width: 16.666666667%; }
+.container .cols.col-3 { width: 25%;}
+.container .cols.col-4 { width: 33.333333333%;}
+.container .cols.col-5 { width: 41.666666667%; }
+.container .cols.col-6 { width: 50%; }
+.container .cols.col-7 { width: 58.333333333%; }
+.container .cols.col-8 { width: 66.666666667%; }
+.container .cols.col-9 { width: 75%; }
+.container .cols.col-10 { width: 83.333333333%; }
+.container .cols.col-11 { width: 91.666666667%;}
+.container .cols.col-12 { width: 100%;}
+
+}
+@media screen and (max-width: 320px),(min-width: 321px) and (max-width: 480px){
+    .container .cols.col-12{
+        background: url("../images/Cover/cover320.jpg") no-repeat top center;
+        background-size: cover;
+        height: 320px;
+        background-attachment: fixed;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 800px){
+    .container .cols.col-12{
+       background: url("../images/Cover/cover800.jpg") no-repeat top center;
+       background-size: cover;
+       height: 500px;
+       background-attachment: fixed;
+    }
 }
 
-
-@media screen and (max-width: 1024px){
-
-    #logo {
-        top: 12%;
+@media screen and (min-width: 801px) and (max-width: 1024px){
+    .container .cols.col-12{
+        background: url("../images/Cover/cover1024.jpg") no-repeat top center;
+        background-size: cover;
+        height: 620px;
+        background-attachment: fixed;
     }
-
-    #logo img {
-        width: 100px;
-        height: 70px;
-
+}
+@media screen and (min-width: 1025px) and (max-width: 1600px){
+    .container .cols.col-12{
+        background: url("../images/Cover/cover1600.jpg") no-repeat top center;
+        background-size: cover;
+        height: 932px;
+        background-attachment: fixed;
     }
-
-    #nav #menu li a {
-        font-size: 80%;
+}
+@media screen and (min-width: 1601px){
+    .container .cols.col-12{
+        background: url("../images/Cover/cover.jpg") no-repeat top center;
+        background-size: cover;
+        height: 1024px;
+        background-attachment: fixed;
     }
-
-    #wrapper #title {
-        font-size: 35px;
-    }
-
-    #main #planes .row .cell, img {
-        width: 80%;
-        height: 50%;
-    }
-
-    .learn {
-        width: 50%;
-
-    }
-
-    #planes {
-        height: 450px;
-    }
-
-    #footer {
-        height: 200%;
-    }
-
-
-    #footer #copy {
-        width: 200px;
-    }
-
-    #footer #socials p{
-        width: 200px;
-    }
-
-
 }

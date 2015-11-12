@@ -1,0 +1,32 @@
+/* font-family: "ProximaNovaRegular"; */
+@font-face {
+    font-family: "ProximaNovaRegular";
+    src: url("../fonts/ProximaNova/ProximaNovaRegular/ProximaNovaRegular.eot");
+    src: url("../fonts/ProximaNova/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"), url("../fonts/ProximaNova/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MarckScriptRegular"; */
+@font-face {
+    font-family: "MarckScriptRegular";
+    src: url("../fonts/MarckScriptRegular/MarckScriptRegular.eot");
+    src: url("../fonts/MarckScriptRegular/MarckScriptRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/MarckScriptRegular/MarckScriptRegular.woff") format("woff"), url("../fonts/MarckScriptRegular/MarckScriptRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "ArianAMUMonoRegular"; */
+@font-face {
+    font-family: "ArianAMUMonoRegular";
+    src: url("../fonts/ArianAMUMono/ArianAMUMonoRegular/ArianAMUMonoRegular.eot");
+    src: url("../fonts/ArianAMUMono/ArianAMUMonoRegular/ArianAMUMonoRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/ArianAMUMono/ArianAMUMonoRegular/ArianAMUMonoRegular.woff") format("woff"), url("../fonts/ArianAMUMono/ArianAMUMonoRegular/ArianAMUMonoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoRegular"; */
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
