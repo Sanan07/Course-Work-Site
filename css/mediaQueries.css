@@ -31,7 +31,7 @@
 
 }
 @media screen and (max-width: 320px),(min-width: 321px) and (max-width: 480px){
-    .container .cols.col-12{
+     .wrapper{
         background: url("../images/Cover/cover320.jpg") no-repeat top center;
         background-size: cover;
         height: 320px;
@@ -39,7 +39,7 @@
     }
 }
 @media screen and (min-width: 481px) and (max-width: 800px){
-    .container .cols.col-12{
+     .wrapper{
        background: url("../images/Cover/cover800.jpg") no-repeat top center;
        background-size: cover;
        height: 500px;
@@ -48,7 +48,7 @@
 }
 
 @media screen and (min-width: 801px) and (max-width: 1024px){
-    .container .cols.col-12{
+     .wrapper{
         background: url("../images/Cover/cover1024.jpg") no-repeat top center;
         background-size: cover;
         height: 620px;
@@ -56,7 +56,7 @@
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1600px){
-    .container .cols.col-12{
+     .wrapper{
         background: url("../images/Cover/cover1600.jpg") no-repeat top center;
         background-size: cover;
         height: 932px;
@@ -64,7 +64,7 @@
     }
 }
 @media screen and (min-width: 1601px){
-    .container .cols.col-12{
+     .wrapper{
         background: url("../images/Cover/cover.jpg") no-repeat top center;
         background-size: cover;
         height: 1024px;
