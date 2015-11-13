@@ -1,3 +1,18 @@
+/*Clear-fix*/
+.container:before,
+.container:after,
+.row:before,
+.row:after,
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+.row:after,
+.clear:after {
+    clear: both;
+}
+
 /*Mobile first*/
 .container .cols.col-1, 
 .container .cols.col-2, 
@@ -11,6 +26,10 @@
 .container .cols.col-10, 
 .container .cols.col-11,
 .container .cols.col-12 { width: 100%;}
+
+.dark {
+    height: 932px;
+}
 
 /*From 1024px to infinity*/
 
@@ -31,19 +50,28 @@
 
 }
 @media screen and (max-width: 320px),(min-width: 321px) and (max-width: 480px){
-     .wrapper{
+    .wrapper{
         background: url("../images/Cover/cover320.jpg") no-repeat top center;
         background-size: cover;
         height: 320px;
         background-attachment: fixed;
     }
+    .dark {
+        height: 320px;
+    }
+
+
 }
-@media screen and (min-width: 481px) and (max-width: 800px){
-     .wrapper{
-       background: url("../images/Cover/cover800.jpg") no-repeat top center;
-       background-size: cover;
-       height: 500px;
-       background-attachment: fixed;
+@media screen and (min-width: 481px) and (max-width: 800px) {
+    .wrapper {
+        background: url("../images/Cover/cover800.jpg") no-repeat top center;
+        background-size: cover;
+        height: 500px;
+        background-attachment: fixed;
+    }
+
+    .dark {
+        height: 500px;
     }
 }
 
@@ -54,6 +82,9 @@
         height: 620px;
         background-attachment: fixed;
     }
+    .dark {
+        height: 620px;
+    }
 }
 @media screen and (min-width: 1025px) and (max-width: 1600px){
      .wrapper{
@@ -61,6 +92,9 @@
         background-size: cover;
         height: 932px;
         background-attachment: fixed;
+    }
+    .dark {
+        height: 932px;
     }
 }
 @media screen and (min-width: 1601px){
@@ -70,4 +104,23 @@
         height: 1024px;
         background-attachment: fixed;
     }
+    .dark {
+        height: 1024px;
+    }
 }
+
+@media screen and (min-width:481px) and (max-width: 1124px) {
+    .container .cols.col-1,
+    .container .cols.col-2,
+    .container .cols.col-3 { width: 50%;}
+    .container .cols.col-4,
+    .container .cols.col-5,
+    .container .cols.col-6,
+    .container .cols.col-7,
+    .container .cols.col-8,
+    .container .cols.col-9,
+    .container .cols.col-10,
+    .container .cols.col-11,
+    .container .cols.col-12 { width: 100%;}
+}
+
