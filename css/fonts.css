@@ -90,4 +90,15 @@
     font-style: normal;
     font-weight: normal;
 }
+/* @font-face kit by Fonts2u  */ 
+@font-face {
+    font-family:"Play-Regular";
+    src:url("../fonts/Play/Play-Regular.eot") format("embedded-opentype"),
+        url("../fonts/Play/Play-Regular.woff") format("woff"),
+        url("../fonts/Play/Play-Regular.ttf") format("truetype"),
+        url("../fonts/Play/Play-Regular.svg#Play") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
 

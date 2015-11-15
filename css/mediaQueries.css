@@ -3,33 +3,36 @@
 .container:after,
 .row:before,
 .row:after,
+.narrow:before,
+.narrow:after,
 .clear:before,
 .clear:after {
     content: " ";
     display: table;
 }
 .row:after,
+.narrow:after,
 .clear:after {
     clear: both;
 }
 
 /*Mobile first*/
-.container .cols.col-1, 
-.container .cols.col-2, 
+.container .cols.col-1,
+.container .cols.col-2,
 .container .cols.col-3,
-.container .cols.col-4, 
-.container .cols.col-5, 
-.container .cols.col-6, 
-.container .cols.col-7, 
-.container .cols.col-8, 
+.container .cols.col-4,
+.container .cols.col-5,
+.container .cols.col-6,
+.container .cols.col-7,
+.container .cols.col-8,
 .container .cols.col-9,
-.container .cols.col-10, 
+.container .cols.col-10,
 .container .cols.col-11,
 .container .cols.col-12 { width: 100%;}
-
 .dark {
     height: 932px;
 }
+
 
 /*From 1024px to infinity*/
 
@@ -49,6 +52,8 @@
 .container .cols.col-12 { width: 100%;}
 
 }
+
+
 @media screen and (max-width: 320px),(min-width: 321px) and (max-width: 480px){
     .wrapper{
         background: url("../images/Cover/cover320.jpg") no-repeat top center;
@@ -56,10 +61,20 @@
         height: 320px;
         background-attachment: fixed;
     }
+
+    .wrapper .text h1 {
+        font-size: 1.2em;
+    }
     .dark {
         height: 320px;
     }
 
+    .about {
+        height: 400px;
+    }
+    footer {
+        height: 100px;
+    }
 
 }
 @media screen and (min-width: 481px) and (max-width: 800px) {
@@ -73,6 +88,12 @@
     .dark {
         height: 500px;
     }
+    .about {
+        height: 350px;
+    }
+    footer {
+        height: 200px;
+    }
 }
 
 @media screen and (min-width: 801px) and (max-width: 1024px){
@@ -85,17 +106,44 @@
     .dark {
         height: 620px;
     }
+    .container .narrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 @media screen and (min-width: 1025px) and (max-width: 1600px){
      .wrapper{
-        background: url("../images/Cover/cover1600.jpg") no-repeat top center;
-        background-size: cover;
+         background-size: cover;
         height: 932px;
-        background-attachment: fixed;
-    }
+         background-repeat: no-repeat;
+         background-position: top center;
+         background-image: url("../images/Cover/cover1600.jpg");
+         background-attachment: fixed;
+     }
     .dark {
         height: 932px;
     }
+    .container .narrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 @media screen and (min-width: 1601px){
      .wrapper{
@@ -107,6 +155,18 @@
     .dark {
         height: 1024px;
     }
+    .container .narrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 @media screen and (min-width:481px) and (max-width: 1124px) {
@@ -122,5 +182,12 @@
     .container .cols.col-10,
     .container .cols.col-11,
     .container .cols.col-12 { width: 100%;}
+
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
