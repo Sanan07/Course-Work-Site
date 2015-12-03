@@ -1,157 +1,213 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Good To See You</title>
-    <link rel="icon" href="logo/favicon.png">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/mediaQueries.css" />
-    <script src="js/jquery-2.1.4.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Главная страница</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css"/>
     <script src="js/script.js"></script>
 
-
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-
 <body>
-    <div class="wrapper">
-        <div class="logo">
-            <img src="logo/logo3.png" alt="logo" width="150" height="85"/>
-        </div>
+
+<div class="container-fluid cover">
+    <div class="row">
+            <img src="images/cover.jpg" alt="cover" class="img-responsive"/>
+            <div class="color_overlay"></div>
+            <img src="logo/logo3.png" alt="logo" class="logo"/>
             <ul class="menu">
-                <li><a href="">Главная</a></li>
+                <li><a  href="#">Главная</a></li>
                 <li>
-                    <a href="">Самолеты</a>
+                    <a href="html/airplane.html">Самолеты</a>
                     <ul class="sub_menu">
-                        <li><a href="">Гражданские</a></li>
-                        <li><a href="">Грузовые</a></li>
+                        <li>
+                            <a href="html/airplanesPas.html">Пассажирские</a>
+                        </li>
+                        <li>
+                            <a href="html/airplaneCargo.html">Грузовые</a>
+                        </li>
                     </ul>
                 </li>
-                <li><a href="">О компании</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a href="#about">Контакты</a></li>
             </ul>
 
-        <div class="dark"></div>
 
-         <div class="text animated zoomInLeft">
-             <h1>Смотри. Мечтай. Лети.</h1>
-             <h2>Ознакомьтесь с нашими лучшими моделями самолетов</h2>
-             <a href="#planes" class="click">Узнать подробнее</a>
-
-         </div>
-    </div>
-
-    <div class="container">
-        <!-- First row-->
-        <h1>Пассажирские перевозки</h1>
-             <div class="row" id="planes">
-                <div class="cols col-3">
-                   <img src="images/1.jpg" alt="plane"/>
-                    <div class="hidden">
-                        <h1>New</h1>
-                    </div>
-                </div>
-                <div class="cols col-3">
-                    <img src="images/2.jpg" alt="plane"/>
-                    <div class="hidden">
-                        <h1>Modern</h1>
-                    </div>
-                </div>
-                <div class="cols col-3">
-                    <img src="images/3.jpg" alt="plane"/>
-                    <div class="hidden">
-                        <h1>Creative</h1>
-                    </div>
-                </div>
-                <div class="cols col-3">
-                    <img src="images/4.jpg" alt="plane"/>
-                    <div class="hidden">
-                        <h1>Vintage</h1>
-                    </div>
-                </div>
-            </div>
-                <div class="row">
-                    <div class="cols col-3">
-                        <img src="images/5.jpg" alt="plane"/>
-                        <div class="hidden">
-                            <h1>Fast</h1>
-                        </div>
-                    </div>
-                    <div class="cols col-3">
-                        <img src="images/7.jpg" alt="plane"/>
-                        <div class="hidden">
-                            <h1>Highly</h1>
-                        </div>
-                    </div>
-                    <div class="cols col-3">
-                        <img src="images/6.jpg" alt="plane"/>
-                        <div class="hidden">
-                            <h1>Friendly</h1>
-                        </div>
-                    </div>
-                    <div class="cols col-3">
-                        <img src="images/8.jpg" alt="plane"/>
-                        <div class="hidden">
-                            <h1>Planes</h1>
-                        </div>
-                    </div>
-                </div>
-                    <!-- Second row-->
-                    <h1>Грузовые перевозки</h1>
-                    <div class="row narrow">
-                        <div class="cols col-4">
-                            <img src="images/9.jpg" alt="plane"/>
-                            <div class="hidden">
-                                <h1>New</h1>
-                            </div>
-                        </div>
-                        <div class="cols col-4">
-                            <img src="images/10.jpg" alt="plane"/>
-                            <div class="hidden">
-                                <h1>Modern</h1>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="row narrow">
-                        <div class="cols col-4">
-                            <img src="images/11.jpg" alt="plane"/>
-                            <div class="hidden">
-                                <h1>Fast</h1>
-                            </div>
-                        </div>
-                        <div class="cols col-4">
-                            <img src="images/12.jpg" alt="plane"/>
-                            <div class="hidden">
-                                <h1>Highly</h1>
-                            </div>
-                        </div>
-                    </div>
-
-
-        <div class="about">
-
-            <div class="cols col-3">
-                <h1>[Здравствуй, Мир]</h1>
-            </div>
-
-            <div class="cols col-9">
-                <p>Мы являемся самой большой авиакомпанией в Закавказье.
-                    В нашем расоряжении только самые современные самолеты.
-                    У нас отличный персонал.
-                    Ну и самое главное, приемлемые цены!!!</p>
-            </div>
-
+         <div class="col-xs-6  spring">
+            <p>САМОЛЕТЫ НА ЛЮБОЙ ВКУС</p>
+        </div>
+        <div class="col-xs-10  discount">
+            <p>САМЫЙ ЛУЧШИЙ АВИАПАРК  В РЕГИОНЕ</p>
+        </div>
+        <div class="col-xs-7  trend">
+            <p>МОЩНЫЕ,БЫСТРЫЕ,СОВРЕМЕННЫЕ</p>
+        </div>
+        <div class="btn col-xs-3">
+            <a class="click" href="#plane">Узнать подробнее</a>
         </div>
 
-        <footer>
-            <p>Developed and designed by
-                <a href="https://www.facebook.com/sanan.yuzb95">Sanan Yuzbashiyev</a></p>
-        </footer>
-
     </div>
+</div>
+<div id="plane" class="col-xs-12 title" >
+    <h1>Пассажирские самолеты</h1>
+</div>
 
+<div class="container-fluid planes">
+    <div class="row first_row">
+        <div class="col-xs-12 col-sm-6 col-lg-3" >
+            <img src="images/1.jpg" alt="1" class="img-responsive"/>
+            <a href="html/airplanesPas.html#embraer170">
+                <div class="color_overlay2">
+                    <p>Embraer ERJ-170</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-3">
+            <img src="images/2.jpg" alt="2" class="img-responsive"/>
+            <a href="html/airplanesPas.html#embraer190">
+                <div class="color_overlay2">
+                    <p>Embraer ERJ-190</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-3">
+            <img src="images/3.jpg" alt="3" class="img-responsive"/>
+            <a href="html/airplanesPas.html#airbus319">
+                <div class="color_overlay2">
+                    <p>Airbus A319</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-3">
+            <img src="images/4.jpg" alt="4" class="img-responsive"/>
+            <a href="html/airplanesPas.html#airbus320">
+                <div class="color_overlay2">
+                    <p>Airbus A320</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="row second_row">
+        <div class="col-xs-12 col-sm-6 col-lg-3">
+            <img src="images/5.jpg" alt="5" class="img-responsive"/>
+            <a href="html/airplanesPas.html#airbus340">
+                <div class="color_overlay2">
+                    <p>Airbus A340</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-3">
+            <img src="images/6.jpg" alt="6" class="img-responsive"/>
+            <a href="html/airplanesPas.html#boeing757">
+                <div class="color_overlay2">
+                    <p>Boeing 757</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-3">
+            <img src="images/7.jpg" alt="7" class="img-responsive"/>
+            <a href="html/airplanesPas.html#boeing767">
+                <div class="color_overlay2">
+                    <p>Boeing 767</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-3">
+            <img src="images/8.jpg" alt="8" class="img-responsive"/>
+            <a href="html/airplanesPas.html#boeing787">
+                <div class="color_overlay2">
+                    <p>Boeing 787</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-xs-12 title">
+    <h1>Грузовые самолеты</h1>
+</div>
+
+<div class="container planes">
+    <div class="row first_row">
+         <div class="col-xs-12 col-sm-6 col-lg-6">
+            <img src="images/9.jpg" alt="3" class="img-responsive"/>
+            <a href="html/airplaneCargo.html#an-12">
+                <div class="color_overlay2">
+                    <p>АН-12</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-6">
+            <img src="images/10.jpg" alt="4" class="img-responsive"/>
+            <a href="html/airplaneCargo.html#il-76">
+                <div class="color_overlay2">
+                    <p>ИЛ-76</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="row second_row">
+        <div class="col-xs-12 col-sm-6">
+            <img src="images/11.jpg" alt="7" class="img-responsive"/>
+            <a href="html/airplaneCargo.html#boeing747-400">
+                <div class="color_overlay2">
+                    <p>Boeing 747-400</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <img src="images/12.jpg" alt="8" class="img-responsive"/>
+            <a href="html/airplaneCargo.html#boeing747-8">
+                <div class="color_overlay2">
+                    <p>Boeing 747-8</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid about" id="about">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 hello">
+            <p>[Здравствуй, Мир]</p>
+            <p>Мы всегда рады услышать Вас!!! </p>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <p>Свяжитесь с нами: <br/> Тел : (+99451) 526-86-33 <br/> E-mail :
+                <a href="mailto:y.sanan95@gmail.com">y.sanan95@gmail.com</a>
+
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid footer" id="">
+    <div class="row">
+        <div class="col-xs-12">
+            <p>Дизайн и разработка сайта :
+                <a href="https://facebook.com/sanan.yuzb95" target="_blank">Sanan Yuzbashiyev</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
 </body>
-
 </html>

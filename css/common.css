@@ -1,0 +1,49 @@
+body {
+    background-color: whitesmoke;
+}
+.navbar .collapse li a {
+    color: white;
+    font-family: "OpenSans", "LatoRegular", sans-serif;
+    font-size: 1vw;
+
+}
+.navbar .collapse li a:hover {
+    color: #818181;
+}
+/*Sub menu*/
+.navbar .collapse li .sub_menu {
+    position: absolute;
+    background-color: #222;
+    width: 10.2vw;
+    display: none;
+}
+.navbar .collapse li:hover .sub_menu {
+    display: block;
+    z-index: 1;
+}
+.navbar .collapse li .sub_menu li{
+    float: none;
+    padding: 5px;
+    list-style: none;
+    text-align: left;
+}
+.navbar .collapse li .sub_menu li a{
+    text-decoration: none;
+}
+.footer {
+    background-color: rgb(51,51,51);
+    color: whitesmoke;
+    font-size: 2vw;
+    font-family: "OpenSans", sans-serif;
+    padding: 2vw;
+}
+.footer .row {
+    margin: 0;
+}
+.footer .col-xs-12 {
+    text-align: center;
+}
+.footer .col-xs-12 a{
+    text-decoration: none;
+
+}

@@ -3,7 +3,7 @@
  */
 
 $(document).ready(function(){
-    $(".text").on("click","a", function (event) {
+    $(".col-xs-3").on("click","a", function (event) {
 
         event.preventDefault();
 
