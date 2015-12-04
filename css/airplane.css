@@ -40,13 +40,16 @@ h1 {
 }
 .table .aircraft {
     border-collapse: collapse;
-    width: 100%;
+    width: 90%;
     border: 0 none;
     margin: 0;
     padding: 0;
     vertical-align: top;
     font-family: "OpenSansLight", sans-serif;
     font-size: 1.5vw;
+}
+.table .aircraft td:nth-child(2) {
+    text-align: right;
 }
 #embraer190 {
     margin-top: 2%;
